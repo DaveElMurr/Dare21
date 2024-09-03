@@ -685,6 +685,9 @@ text-align: center;
     }
 }
 @media (max-width:992px){
+    .container, .container-md, .container-sm {
+    max-width:100%;
+}
     #hero-container{
         /* display: flex;
         flex-direction: column;
@@ -848,6 +851,14 @@ text-align: center;
         width: 100%;
 
     }
+    .case-studies-right-grid{
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
     .card1{
         
         
@@ -870,12 +881,12 @@ text-align: center;
  
     .card2 .card-image img {
         height:100%;
-        width: 100%;
+        width: 560px;
     }
     
     .card3{
         /* padding-top: 500px; */
-        /* width: 560px; */
+        width: 560px;
         order: 3;
     }
     .card3 .card-image {
@@ -884,11 +895,11 @@ text-align: center;
     }
     .card3 .card-image img {
         height:100%;
-        width: 100%;
+        width: 560px;
     }
     .card4{
         /* padding-top: 500px; */
-       
+        width: 560px;
         order: 4;
     }
     .card4 .card-image {
@@ -901,6 +912,9 @@ text-align: center;
     }
     .card-image img{
         border-radius: 24px;
+    }
+    .card-image{
+        width: 560px;
     }
     .card-info{
         width: 100%;
@@ -1268,15 +1282,15 @@ align-items: center;
     border-top: #e7e7e7  solid 1px;
     border-bottom: #e7e7e7  solid 1px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center; 
     
     row-gap: 40px;
 
 }
 .dare21-logo{
-    height: 100%;
-    width: 100%;
+    height: 27px;
+    width: 142px;
 }
 .dare21-logo a img{
     height: 100%;
@@ -1284,11 +1298,11 @@ align-items: center;
 }
 
 .social-media-link-container{
+    width: 100%;
     display: flex;
-   width: 100%;
-   
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
+    gap: 10px;
 }
 .social-media-link a{
     text-decoration: none;
@@ -1316,4 +1330,9 @@ align-items: center;
     .hero-header-title h2{
         font-size: 30px;
        }
+       .card-image{
+        width: 560px;
+    }
+
 }
+
